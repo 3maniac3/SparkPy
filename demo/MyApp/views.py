@@ -1,4 +1,3 @@
-import os
 from django.shortcuts import render
 from django.http import HttpResponse
 
@@ -7,4 +6,4 @@ def index(response):
 	return HttpResponse("<h1>Hello, World!</h1>")
 	
 def user(response):
-	return render(response, "main/base.html", {"content": os.getcwd()})
+	return render(response, "main/base.html", {"content": "Hello there."})
